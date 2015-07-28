@@ -1,0 +1,4 @@
+VERSION=$(cat VERSION)
+docker build $@ -t hdfs .
+docker tag -f hdfs:latest hdfs:$VERSION
+docker tag -f hdfs:latest dockerhub.razerdata.com/razer/hdfs:$VERSION
