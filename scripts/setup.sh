@@ -2,7 +2,7 @@
 
 # To be consistent with marathon
 
-if [ -z "$PORT0" ]; then
+if [ -n "$PORT0" ]; then
 	NAMENODE_HTTP_PORT=$PORT0
 	SECONDARYNAMENODE_HTTP_PORT=$PORT0
 fi
