@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# To be consistent with marathon
+
+if [ -z "$PORT0" ]; then
+	NAMENODE_HTTP_PORT=$PORT0
+	SECONDARYNAMENODE_HTTP_PORT=$PORT0
+fi
 
 MASTER=${MASTER:-0.0.0.0}
 sed -i 's;0.0.0.0;'$MASTER';g' $HADOOP_PREFIX/etc/hadoop/core-site.xml
