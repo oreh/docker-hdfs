@@ -19,13 +19,13 @@
 <configuration>
 	<property>
 		<name>dfs.namenode.name.dir</name>
-		<value>file:/hdfs/dfs/name</value>
+		<value>file:///hdfs/dfs/name</value>
 		<final>true</final>
 	</property>
 
 	<property>
 		<name>dfs.datanode.data.dir</name>
-		<value>file:/hdfs/dfs/data</value>
+		<value>file:///hdfs/dfs/data</value>
 		<final>true</final>
 	</property>
 
@@ -37,5 +37,15 @@
 	<property>
 		<name>dfs.permissions</name>
 		<value>false</value>
+	</property>
+
+	<property>
+		<name>dfs.namenode.http-address</name>
+		<value>0.0.0.0:50070</value>
+	</property>
+
+	<property>
+		<name>dfs.namenode.secondary.http-address</name>
+		<value>0.0.0.0:50090</value>
 	</property>
 </configuration>

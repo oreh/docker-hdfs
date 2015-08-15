@@ -51,5 +51,7 @@ ADD scripts /scripts
 
 # Name node foramt
 RUN hdfs namenode -format
+ENV NAMENODE_HTTP_PORT=50070
+ENV SECONDARYNAMENODE_HTTP_PORT=50090
 
 ENTRYPOINT ["/scripts/setup.sh"]

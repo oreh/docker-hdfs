@@ -9,8 +9,8 @@ Simple docker images for hdfs
 
 ```bash
 ./build
-HADOOP_VERSION=hadoop-2.6.0 ./build
-HADOOP_VERSION=hadoop-2.7.1 ./build
+HADOOP_VERSION=2.6.0 ./build
+HADOOP_VERSION=2.7.1 ./build
 ```
 
 ## Config
