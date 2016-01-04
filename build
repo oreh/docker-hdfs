@@ -1,4 +1,6 @@
+#!/bin/bash
+
 . VERSION
 sed -e "s/HADOOP_VERSION hadoop-2.4.1/HADOOP_VERSION hadoop-${HADOOP_VERSION}/g" Dockerfile > tmp.dockerfile
-docker build -f tmp.dockerfile -t ${IMAGE}-${HADOOP_VERSION} .
-docker tag -f ${IMAGE}-${HADOOP_VERSION}:latest ${IMAGE}-${HADOOP_VERSION}:$TAG
+docker build -f tmp.dockerfile -t wangqiang8511/${IMAGE}-${HADOOP_VERSION} .
+docker tag -f wangqiang8511/${IMAGE}-${HADOOP_VERSION}:latest wangqiang8511/${IMAGE}-${HADOOP_VERSION}:$TAG
